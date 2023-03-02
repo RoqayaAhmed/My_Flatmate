@@ -1,0 +1,702 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+    
+}
+
+/*NAV
+
+nav
+{
+    background-color:black;
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+    padding:0px 75px;
+}
+
+
+nav .logo
+{
+    float: left;
+}
+
+nav .logo p
+{
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:white;
+}
+
+nav ul
+{
+    float: right;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    color:#FFA500;
+    transition: 0.5s;
+}
+
+nav ul .active
+{
+    color:#FFA500;
+
+}
+
+.checkbtn{
+    color:#fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*LANDING*/
+
+.landing{
+    height: 650px;
+	width: 100%;
+	background-image: url(background.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.layer {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		". . ."
+		". klam ."
+		". btn .";
+}
+
+.welcome {
+	grid-area: klam;
+	color: white;
+	text-align: center;
+    
+}
+
+.big{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.big:hover{
+    color: #FFA500;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.smoll{
+    font-size: 25px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.btnn {
+	color: #224C3C;
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: -50px;
+}
+  .btnn:hover{
+      font-size: 23px;
+      transition: 1s;
+      color:#FFA500;
+      
+  }
+
+
+/*Homepage content*/
+
+/*First Section*/
+
+.container
+{
+    display:grid;
+    width:100%;
+    height:550px;
+    grid-template-columns:4fr 4fr 4fr;
+    grid-template-rows: 0.5fr 0.5fr 3fr ;
+	grid-template-areas:
+    "main main main"
+    "abou viss miss"
+    "abou1 viss1 miss1";
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+
+h2{
+color: #FFA500;
+text-align: center;
+font-weight: 900;
+}
+
+h3{
+    color: #FFA500;
+    text-align: center;
+    font-weight: 900; 
+    font-size: 22px;
+}
+.abou{
+    grid-area: abou;
+}
+.viss{
+    grid-area: viss;
+}
+.miss{
+    grid-area: miss;
+
+}
+
+p{
+    text-align: center;
+        color: white;
+        font-size: 25px;
+}
+
+.missiontxt{
+    text-align: center;
+        color: white;
+        font-size: 20px;
+}
+
+.aboutt{
+    grid-area: abou1;
+    margin:10px;
+    border-radius: 25px;
+    background-image: url(aboutt.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    }
+    .aboutt:hover .try {
+        opacity:1;
+        transition: 1s;
+    }
+    .vissionn:hover .try {
+        opacity:1;
+        transition: 1s;
+    }
+    .missionn:hover .try {
+        opacity:1;
+        transition: 1s;
+    }
+    .try
+    {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+        padding: 20px;
+    }
+    .vissionn{
+    grid-area: viss1;
+    margin:10px;
+    border-radius: 15px;
+    background-image: url(vission1.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    }
+    .missionn{
+    grid-area: miss1;
+    margin:10px;
+    border-radius: 15px;
+    background-image: url(mission1.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    }
+
+.mainhead{
+    grid-area: main;
+    font-size: 60px;
+    color: #224C3C;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+/*Second Section*/
+
+.container1{
+    display:grid;
+    width:auto;
+    height:750px;
+    grid-template-columns:1fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 0.5fr 3fr 1fr 0.5fr;
+	grid-template-areas:
+    ". mainn mainn mainn ."
+    ". pos vieww conn ."
+    ". postt view1 conn1 ."
+    ". ptxt vtxt contxt ."
+    ". link1 link2 . .";
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.mainn{
+    grid-area: mainn;
+    margin-top: 20px;
+      font-size: 60px;
+    color:#224C3C;
+    text-align: center;
+    margin-bottom:25px;
+}
+
+.pos{
+    grid-area: pos;
+}
+.vieww{
+    grid-area: vieww;
+}
+.conn{
+    grid-area: conn;
+}
+.postt{
+    grid-area: postt;
+}
+
+.view1{
+    grid-area:view1;
+}
+
+.conn1{
+    grid-area:conn1;
+}
+
+img{
+    width:250px;
+    height:250px;
+    margin: auto;
+}
+
+
+.ptxt{
+    grid-area: ptxt;
+
+}
+
+.vtxt{
+    grid-area: vtxt;
+ 
+}
+
+.contxt{
+    grid-area: contxt;
+    
+
+}
+
+.parag{
+    color:#696969;
+    font-size: 20px;
+    text-align:center; 
+}
+
+.links{
+    text-decoration: none;
+    color:#224C3C;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.links:hover{
+    transition: 1s;
+    font-size: 22px;
+    color: #FFA500;
+}
+.link1{
+    grid-area: link1;
+}
+
+.link2{
+    grid-area: link2;
+}
+
+/*THIRD SECTION*/
+
+.container2{
+    display:grid;
+    width:auto;
+    height:600px;
+    grid-template-columns:1fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+	grid-template-areas:
+    ". heading2 heading2 heading2 ."
+    ". commentt commentt commentt ."
+    ". iconn part2 part2 ."
+    ". submm submm submm .";
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.heading2{
+    grid-area: heading2;
+    margin-top: 20px;
+    font-size: 60px;
+    color:#224C3C;
+    text-align: center;
+    margin-bottom:25px;
+}
+
+.commentt{
+    grid-area: commentt;
+}
+
+.iconn{
+    grid-area: iconn;
+}
+
+.part2{
+    grid-area: part2;
+  
+}
+
+.slidee{
+    color: black;
+    font-size: 25px;
+    text-align: left;
+}
+
+h5{
+    text-align: left;
+    color: #696969;
+}
+
+.submm{
+    grid-area: submm;
+    display: block;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    height: 450px;
+    padding:0px 80px;
+    display: grid;
+    width:auto;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+	grid-template-areas: 
+    "contact about contform"
+    ". social ."
+    ". copyy .";
+    grid-gap: 10px;
+
+}
+
+.contact{
+    grid-area: contact;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.co{
+    color: #FFA500;
+    margin-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.favv{
+    float: left;
+
+}
+.fa:hover {
+    transform: scale(1.1);
+    transition: 0.5s
+}
+
+.social{
+    grid-area: social;
+    font-size: 20px;
+    color: white;
+}
+
+.fa{
+    margin-right: 20px;
+}
+.about{
+    grid-area: about;
+}
+
+.tex{
+    font-size: 22px;
+    color: white;
+    text-align: left;
+}
+
+.texa{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 25px;
+}
+.copyy{
+    grid-area: copyy;
+    
+}
+
+.contform{
+    grid-area: contform;
+}
+ 
+textarea{
+    width: 100%;
+    padding-left:10px;
+}
+
+.button1{
+    padding: 5px;
+    margin-top: 15px;
+    background-color: white;
+    color: #FFA500;
+    text-transform: uppercase;
+}
+/*Media Screen*/
+
+@media screen and (max-width: 990px)
+{
+    nav{
+        padding: 0px 50px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav .logo p{
+        font-size: 30px;
+    }
+
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: #FFA500;
+        position: fixed;
+        top: 75px;
+        left:-100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+    nav ul li{
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+
+    }
+    nav ul .active
+    {
+        color:black;
+    
+    }
+    nav ul li a:hover
+{
+    color:black;
+    transition: 0.5s;
+}
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .wrapper {
+        width: 180px;
+        top: 110%;
+        left: 60%;
+          
+      }
+      .wrapper .btnn {
+        margin: 15px -85px;
+      }
+
+}
+
+@media screen and (max-width: 768px) 
+{
+    nav{
+        font-size: 50px;
+        font-weight: 900;
+    }
+.landing{
+    height: 550px;
+}
+
+    .mainn .eswd .klmten
+    {
+        margin-top: 25px;
+    }
+    .wrapper
+    {
+        width: 180px;
+    }
+      .wrapper .btnn 
+      {
+        margin: -60px;
+      }
+      
+    .container
+    {
+        display: grid;
+        width:auto;
+        height:1700px;
+        grid-template-columns: 1fr;
+        grid-template-rows:0.5fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr;
+        grid-template-areas: 
+        "main"
+        "abou"
+        "abou1"
+        "viss"
+        "viss1"
+        "miss"
+        "miss1";
+    }
+
+    .mainhead{
+        font-size: 50px;
+    }
+
+    .container1{
+        display:grid;
+        width:auto;
+        height:1300px;
+        grid-template-columns: 1fr;
+        grid-template-rows:0.5fr 0.5fr 4fr 2fr 2fr 0.5fr 4fr 2fr 2fr 0.5fr 4fr 2fr 2fr;
+        grid-template-areas:
+        "mainn"
+        "pos"
+        "postt"
+        "ptxt"
+        "link1"
+        "vieww"
+        "view1"
+        "vtxt"
+        "link2"
+        "conn"
+        "conn1"
+        "contxt"
+        ".";
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+img{
+margin: auto;
+}
+.mainn{
+    font-size: 40px;
+}
+
+.parag{
+    text-align: center;
+}
+
+.links{
+    text-align: center !important; 
+}
+
+p{
+    font-size: 35px;
+}
+
+.container2{
+    display:grid;
+    width:auto;
+    height:900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+    "heading2"
+    "commentt"
+    "iconn"
+    "part2"
+    "submm";
+}
+
+.submm{
+    text-align: center;
+}
+.iconn{
+    margin-top: 20px;
+}
+
+.slidee{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+    footer{
+    height: 1020px;
+    display: grid;
+    width:auto;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+    "contact"
+    "about"
+    "contform"
+    "social"
+    "copyy"
+    }
+    .tex{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .texa{
+        font-size: 20px;
+    }
+    .co{
+        margin-top: 10px; 
+    }
+    .fa {
+        border-radius: 100%;
+        margin-right:5px;
+    }
+
+    }
+    
+   
