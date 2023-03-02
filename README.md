@@ -1,0 +1,1 @@
+It is a web application that helps connect people who are looking for flats to rent with the option of sharing the flat with someone to reduce the rent,with flat owners who would like to rent rooms in their flat
